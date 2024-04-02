@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option go_package = "github.com/kinjalrk2k/Kaho-aur-Suno/lib/go/proto/broker";
+
+message KahoRequest {
+  string topic = 1;
+  string message = 2;
+}
+
+message Baat {
+  string topic = 1;
+  string id = 2;
+  string message = 3;
+  string created_at = 4;
+}
+
+message SunoRequest {
+  string topic = 1;
+}
+
+service Broker {
+  rpc Kaho (KahoRequest) returns (Baat);
+  rpc Suno (SunoRequest) returns (stream Baat);
+}

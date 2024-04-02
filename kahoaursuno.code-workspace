@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "name": "root", "path": "." },
+    { "name": "proto", "path": "proto" },
+    { "name": "lib", "path": "lib" },
+    { "name": "server", "path": "server" },
+    { "name": "clients", "path": "clients" }
+  ]
+}
